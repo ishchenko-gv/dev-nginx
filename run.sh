@@ -3,7 +3,7 @@
 docker run \
 	-d \
 	-it \
-	--rm \
+	--restart unless-stopped \
 	--name web \
 	--network="host" \
 	-v $(pwd)/nginx.conf:/etc/nginx/nginx.conf \
